@@ -1,0 +1,476 @@
+/* Body */
+body{
+    margin: 0;
+}
+
+/* Landing -section */
+.landing-section{
+    background: #1AC073;       
+    width: 1440px;                  
+    height: 800px;
+    color: #fff;
+}
+/* header */
+.header{
+    display: inline;
+    width: 1440px;
+    height: 80px;
+    /* width: 90rem;
+    height: 5rem; */
+}
+.header .logo{
+    position: absolute;
+    width: 89px;
+    height: 20px;
+    left: 131.5px;
+    top: 28px;
+    bottom: 32px;
+
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 20px;
+    /* identical to box height, or 62% */
+
+    letter-spacing: -0.012em;
+
+    color: #FFFFFF;
+    margin: 0;
+
+}
+
+.header .nav{
+    display: inline;
+    position: relative;
+    left: 539px;
+    right: 883px;
+    top: 28px;
+    bottom: 32px;
+
+    /* left: 33.688rem;
+    top: 1.75rem;
+    bottom: 2rem; */
+
+
+    width: 3rem;
+    height: 1.25rem;
+    letter-spacing: -0.012em;
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+
+
+    margin: 0 18.5px;
+}
+
+.header .nav-search{
+    position: absolute;
+    left: 1215px;
+    top: 26px;
+    width: 22px;
+    height: 22px;
+    
+    
+    /* margin: 0 20px; */
+}
+.header .nav-cart{
+    position: absolute;
+    left: 1279px;
+    right: 156px;
+    top: 28px;
+    bottom: 33px;
+    
+    /* margin: 0 20px; */
+}
+.main-landing-section {
+    width: 1440px;
+    height: 720px;
+}
+.main-landing-section .large{
+    width: 534px;
+    height: 147px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 82px;
+    position: absolute;
+    left: 132px;
+    top: 250px;
+    bottom: 403px;
+    margin: 0;
+}
+.main-landing-section .small{
+    width: 441px;
+    height: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.012em;
+    position: absolute;
+    left: 132px;
+    top: 429px;
+    bottom: 331px;
+    margin: 0;
+}
+.search-food p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.012em;
+
+    /* Text/black caption */
+
+    color: #929292;
+
+    position: absolute;
+    left: 22px;
+    top: 19px;
+
+    margin: 0;
+}
+.main-landing-section .search-food{
+    /* position: absolute;
+    left: 132px;
+    top: 509px;
+    bottom: 233px; */
+    margin: 0;
+    position: absolute;
+    width: 398px;
+    height: 58px;
+    left: 132px;
+    top: 509px;
+
+    /* White */
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.main-landing-section .search-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding: 19px 29px; */
+    gap: 10px;
+
+    position: absolute;
+    width: 112px;
+    height: 58px;
+    left: 418px;
+    top: 509px;
+    margin: 0;
+
+        
+    background: #F3BA00;
+    border-radius: 0px 10px 10px 0px;
+
+}
+.search-button p{
+    width: 49px;
+    height: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: -0.012em;
+
+    /* White */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    position: relative;
+    left: 31.5px;
+    top: 19px;
+
+    margin: 0;
+}
+.main-landing-section .row-in{
+    display: inline-block;
+    margin: 0;
+    
+}
+.main-landing-section .img-cook{
+    position: absolute;
+    left: 773px;
+    top: 239.9px;
+    bottom: 204.13px;
+    margin: 0;
+}
+
+
+/* Kitchen Section */
+
+.kitchen-section{
+    background: #F7F8FA;
+    position: absolute;
+    width: 1440px;
+    height: 2029px;
+    top: 800px;
+}
+
+.kitchen-section .title{
+    color: #000000;
+
+    width: 250px;
+    height: 24px;
+
+    position: absolute;
+    top: 105px;
+    left: 130px;
+    bottom: 1900px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: -0.012em;
+    margin: 0;
+}
+
+/* cards */
+.kitchen-section .card{
+    width: 277px;
+    height: 337px;
+    position: relative;
+    left: 130px;
+    top: 192px;
+    bottom: 1587px;
+}
+/* Top of Card */
+.img-card img{
+    width: 277px;
+    height: 250px;
+}
+/* Description of card */
+.card .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 24px; */
+    gap: 10px;
+
+    position: absolute;
+    width: 277px;
+    height: 87px;
+
+    /* White */
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(187, 187, 187, 0.25);
+    border-radius: 0px 0px 10px 10px;
+}
+/*  mid if card */
+.top .price{
+    padding-left: 213px;
+}
+.card .top p{
+    position: absolute;
+    top: 12px;
+    left: 15.5px;
+    display: inline;
+    margin: 0;
+    width: 127px;
+    height: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: -0.012em;
+
+    /* Text/Black Body caption */
+
+    color: #1B1C21;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* padding: 15.5px; */
+}
+/* bottom of card */
+.description .bottom{
+    position: absolute;
+    top: 42px;
+    left: 15.5px;
+    margin: 0;
+}
+.rating p{
+    margin: 0;
+    /* width: 17px; */
+    height: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    letter-spacing: -0.012em;
+
+    /* Text/Black Body caption */
+
+    color: #1B1C21;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/* .rating i{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    bottom: 4px;
+} */
+.bottom .rating{
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    width: 45px;
+    height: 20px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 4px; */
+    gap: 4px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+}
+.time p{
+    margin: 0;
+}
+
+.bottom .time{
+    position: absolute;
+    left: 50.5px;
+    top: 7.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 4px;
+    gap: 4px;
+
+    width: 62px;
+    height: 20px;
+
+    background: #BEBEBE;
+    /* Normal outer */
+
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    
+}
+.min{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 4px;
+    gap: 4px;
+
+    width: 62px;
+    height: 20px;
+
+    background: #F7F8FA;
+    border-radius: 5px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.min p{
+    /* width: 30px; */
+    height: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    letter-spacing: -0.012em;
+
+    /* Text/Black Body caption */
+
+    color: #1B1C21;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.bottom .add-to-cart{
+    width: 22px;
+    height: 20px;
+    border-radius: 5px;
+    background: #F3BA00;
+    position: absolute;
+    left: 219px;
+    top: 7px;
+    /* text-align: center; */
+}
+.add-to-cart i{
+    width: 11.1px;
+    height: 10.98px;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    bottom: 3px;
+    /* padding-top: 1.5px; */
+    color: #FFFFFF;
+}
