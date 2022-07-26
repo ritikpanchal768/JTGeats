@@ -18,6 +18,7 @@
     <script src="https://kit.fontawesome.com/134459b8bf.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="landing-section">
         <div class="header">
             <p class="logo">JTGeats</p>
@@ -29,9 +30,7 @@
                 <p>Contact</p>
             </div>
             <img class="nav-search" src="/Assignment Assest/Assets/icons/Search.svg" alt="">
-            <div class="nav-cart">
-                <img src="/Assignment Assest/Assets/icons/Cart.svg" alt="">
-            </div> 
+            <button id="open"><img src="/Assignment Assest/Assets/icons/Cart.svg" alt=""></button>
         </div>
         <div class="main-landing-section">
             <div class="large">
@@ -55,6 +54,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Kitchen-section -->
     <div class="kitchen-section">
         <div class="title">
@@ -365,19 +365,20 @@
                 </div>
             </div>
         </div>
+        <button id="opened">Request a Dish</button>
     </div>
+<!-- Service section -->
     <div class="service-section">
-        
         <div class="text">
             <p class="large">We are providing best <br> home cooked food delivery service.</p>
             <p class="small">Away from home and craving the tasty homemade recipes? <br> Choose from a selection of our delicious home cooked dishes</p>
         </div>
         <div class="c-videos">
-            <video src="/Assignment Assest/Assets/videos/video.mp4"></video>
+            <video src="/Assignment Assest/Assets/videos/Close Up Video Of Vegetables.mp4"></video>
             <div class="controls">
                 <div class="buttons">
-                    <!-- <button id="play-pause"><img src="/Assignment Assest/Assets/icons/play.svg" alt=""></button> -->
-                    <button id="play-pause"></button>
+                    <button id="play-pause"><img src="/Assignment Assest/Assets/icons/play.svg" alt=""></button>
+                    <!-- <button id="play-pause"></button> -->
                 </div>
             </div>
         </div>
@@ -424,7 +425,43 @@
         </div>
         <div class="line"></div>
     </div> 
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <img src="/Assignment Assest/Assets/icons/Cart.svg" alt="">
+            <h1>Cart is Empty</h1>
+            <p>Add some items to the cart to checkout</p>
+            <button id="close">
+                Back to Menu
+            </button>
 
+        </div>
+    </div>
+    <div class="modal-request-a-dish" id="modal-request-a-dish">
+        <div class="modal-request">
+            <h1>Request a Dish</h1>
+            <div class="detail">
+                <div class="name">
+                    <p>Name*</p>
+                    <div class="box"><p>Enter name of the dish</p></div>
+                </div>
+                <div class="upload-image">
+                    <p>Upload an image*</p>
+                    <div class="box"><p>Paste a URL</p></div>
+                </div>
+            </div>
+            
+            <div class="button">
+                <button id="cancel" class="white-bg closed-btn">
+                    Cancel
+                </button>
+                <button id="submit" class="closed-btn">
+                    Submit Request
+                </button>
+            </div>
+                
+
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
