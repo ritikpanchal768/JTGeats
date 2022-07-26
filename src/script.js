@@ -47,7 +47,7 @@ cancel.addEventListener('click',()=>{
 submit.addEventListener('click',()=>{
     modal_request.classList.remove('showed');
 });
-
+// carousel
 $(document).ready(function(){
     $('.carousel-item ').slick({
         accessibility:true,
