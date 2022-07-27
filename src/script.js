@@ -55,7 +55,9 @@ $(document).ready(function(){
         centerMode:false,
         cssEase:'ease',
         slidesToShow: 3,
-        prevArrow:'<img class="slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" style="height : 70px; width : 70px; left : -78px" />',
-        nextArrow:'<img class="slick-next" src="src/Assignment Assest/Assets/icons/play.svg" style="height : 70px; width : 70px; right : -32px" />'
+        prevArrow:'<img class="slick-prev" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
+        nextArrow:'<img class="slick-next" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
+        // hov_prevArrow:'<img class="hav_slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" />',
+        // hov_prevArrow:'<img class="hav_slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" />'
     });
   });

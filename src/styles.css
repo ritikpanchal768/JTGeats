@@ -8,21 +8,30 @@ body{
 .landing-section{
     background: #1AC073;       
     width: 100%; 
-    height: 800px;
+    min-height: 800px;
     color: #fff;  
 }
 /* header */
 .header{
-    width: 100%;
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1162.66px;
+    min-height: 76.5px;
+    position: relative;
+    left: 131.5px;
+    align-items: center;
+}
+.header .item-1{
+    display: flex;
+    justify-content: space-between;
+    width: 827px;
 }
 .header .logo{
     /* JTGeats */
-    position: relative;
+    
     width: 89px;
     height: 20px;
-    left: 131.5px;
-    top: 28.5px;
+    
 
     font-family: 'Squada One';
     font-style: normal;
@@ -41,9 +50,9 @@ body{
     margin: 0;
     display: flex;
     justify-content: space-between; 
-    position: relative;
+    /*position: relative;
     left: 559px;
-    top: 7px;
+    top: 7px; */
     width: 399.5px;
     height: 20px;
     
@@ -53,16 +62,24 @@ body{
     letter-spacing: 0.012em;
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
+    font-size: 18px;
     margin: 0;
+}
+.header .item-2{
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+    height: 24px;
+    /* position: absolute;
+    left: 1217px;
+    top: 27px; */
 }
 .header .nav-search{
     margin: 0;
-    position: absolute;
-    left: 1217px;
-    top: 27px;
-    width: 19px;
-    height: 19px;
+    
+    width: 21px;
+    height: 21px;
     /* White */
 
     /* border: 2px solid #FFFFFF; */
@@ -76,11 +93,12 @@ body{
     border: 0;
     width: 17.66px;
     height: 14px;
-    position: absolute;
+    /* position: absolute;
     left: 1269.5px;
-    top:25px;
+    top:25px; */
     background: rgba(0, 0, 0, 0);
-
+    cursor: pointer;
+    margin-right: 8px;
 }
 .modal-container {
     font-family: 'Roboto';
@@ -223,8 +241,8 @@ body{
     position: relative;
     left: 132px;
     top: 159px;
-    width: 1163.63px;
-    height: 560px;
+    max-width: 1163.63px;
+    min-height: 560px;
     display: flex;
     justify-content: space-between;
 }
@@ -241,10 +259,10 @@ body{
     /* padding: 159px 0 0 108px; */
 }
 .img-cook img{
-    /* position: relative;
-    top: 159px; */
-    /* left: 108px; */
+    max-width: 521.63px;
+    max-height: 525px;
 }
+
 .info .large{
     position: relative;
     top: 11px;
@@ -271,9 +289,6 @@ body{
     top: 26px;
     max-width: 441px;
     min-height: 40px;
-    /* position: relative; */
-    /* left: 132px; */
-    /* top: 185px; */
 }
 .small p{
     font-family: 'Roboto';
@@ -287,10 +302,9 @@ body{
 }
 .main-landing-section .search-food{
     position: relative;
-    top: 66px;
+    top: 68px;
     display: flex;
     justify-content: space-between;
-    margin: 0;
     width: 398px;
     height: 58px;
     
@@ -308,25 +322,31 @@ body{
 
     /* Text/black caption */
     text-align: center;
-    
+    /* align-items: center; */
 
     
 }
 .search-food .wide{
     width: 179px;
+    height: 58px;
     color: #929292;
+    margin: 0;
     
 }
 .wide p{
     position: relative;
     top: 4px;
+    margin-top: 12px;
 }
 .search-button p{
+    /* text-align: center; */
     position: relative;
     top: 4px;
+    margin-top: 12px;
 }
 .main-landing-section .search-button{
-    width: 112px;      
+    width: 112px; 
+    height: 58px;     
     background: #F3BA00;
     border-radius: 0px 10px 10px 0px;
 }
@@ -346,7 +366,7 @@ body{
 .kitchen-section{
     background: #F7F8FA;
     width: 100%;
-    height: 2029px;
+    min-height: 2029px;
     font-family: 'Roboto';
 }
 
@@ -381,12 +401,13 @@ body{
 .kitchen-section .column{
     display: flex;          /*creates columns*/
     justify-content: space-between;   /*space b/w card*/
-    width: 1180px;
+    flex-wrap: wrap;
+    max-width: 1180px;
     position: relative;
     top: 128px;
     left: 130px;
     /* margin: 1em 0 0 0; */
-    margin: 40px 0 0 0;
+    
 }
 
 
@@ -394,7 +415,7 @@ body{
 .column .card{
     width: 277px;
     height: 337px;
-    
+    margin: 40px 0 0 0;
     /* margin: 0 0 0 1.5em; */
 }
 /* Top of Card */
@@ -615,17 +636,21 @@ body{
 
 /* carousel */
 .popular-items-section{
+    width: 1400px;
     position: relative;
-    top: 320px;
+    top: 317px;
+    left: 40px;
 }
 
-/* .popular-items-section  .card {
-    padding-left: 100px;
-} */
 
+/* .hov-arrow-prev:hover{
+    opacity:1;
+    
+} */
 
 /* Request a dish */
 #opened{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -636,8 +661,8 @@ body{
     position: relative;
     width: 210px;
     height: 48px;
-    left: 615px;
-    top: 85px;
+    left: 574px;
+    top: 91px;
 
     background: #1AC073;
     border-radius: 10px;
@@ -843,8 +868,8 @@ body{
 }
 .service-section .text{
     margin: 0;
-    width: 885px;
-    height: 164px;
+    max-width: 885px;
+    min-height: 164px;
     text-align: center;
     position: relative;
     left: 275px;
@@ -856,8 +881,8 @@ body{
     /* width: 100%; */
     text-align: center;
     margin: 0;
-    width: 750px;
-    height: 114px;
+    max-width: 750px;
+    min-height: 114px;
 
     /* position: relative;
     top: 0.15em;
@@ -887,8 +912,8 @@ body{
     
 }
 .text .small{
-    width: 447px;
-    height: 40px;
+    max-width: 447px;
+    min-height: 40px;
 
     /* paragraph */
     position: relative;
@@ -919,7 +944,7 @@ body{
 }
 .color-change{
     width: 100%;
-    height: 344px;
+    min-height: 344px;
     /* position: relative;
     top: 5.5px; */
     background: #C7EACC;
@@ -928,7 +953,7 @@ body{
     z-index: -1;
 }
 .c-videos{
-    width: 878px;
+    max-width: 878px;
     height: 442px;
     /* background: red; */
     position: relative;
@@ -1342,22 +1367,57 @@ body{
     
 }
 
-@media (max-width: 1200px) {
-    /* .landing-section{
-        height: 1500px;
+@media (min-width:1051px) and ( max-width: 1325px) {
+    
+    .main-landing-section{
+        max-width: 900px;
+        top: 50px;
+        /* flex-direction: column; */
     }
-    .header .logo{
-        position: relative;
-        width: 89px;
-        height: 20px;
-        left: 131.5px;
-        top: 28.5px;
+    .header, .service-section .text, .service-section .c-videos{
+        left: auto;
+    }
+    /* .search-button{
+        margin-left: 5px;
     } */
-    .main-landing-section, .kitchen-section .column {
-        flex-direction: column;   /*switches axis*/
-    }
     .main-landing-section .info{
         flex-direction: column; 
+        min-height: 350px;
     }
+    .img-cook img{
+        width: 500px;
+        height: auto;
+    }
+    /* .c-videos{
+        max-width: 702.396px;
+        height: 353.6;
+    } */
+}
 
+@media ( max-width: 1050px) {
+    .main-landing-section{
+        flex-direction: column;
+        max-width: 534px;
+    }
+    .main-landing-section .img-cook,.main-landing-section .info{
+        align-items: center;
+        text-align: center;
+    }
+    .small {
+        margin: auto;
+    }
+    .img-cook img{
+        width: 400px;
+        height: auto;
+    }
+    .header, .main-landing-section,  .service-section .text, .service-section .c-videos{
+        left: auto;
+    }
+    /* .c-videos{
+        max-width: 585.33px;
+        height: 170px;
+    } */
+    .search-food{
+        left: 50px;
+    }
 }
