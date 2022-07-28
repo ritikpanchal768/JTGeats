@@ -85,8 +85,8 @@ $(document).ready(function(){
         arrows: true,
         // autoplay: true,
         // autoplaySpeed: 2000,
-        prevArrow:'<img class="slick-prev" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
-        nextArrow:'<img class="slick-next" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
+        prevArrow:'<img class="slick-prev carousel-btn" src="src/Assignment Assest/Assets/icons/Arrow.svg" data-hover="src/Assignment Assest/Assets/icons/play.svg" data-src="src/Assignment Assest/Assets/icons/Arrow.svg"/>',
+        nextArrow:'<img class="slick-next carousel-btn" src="src/Assignment Assest/Assets/icons/Arrow.svg" data-hover="src/Assignment Assest/Assets/icons/play.svg" data-src="src/Assignment Assest/Assets/icons/Arrow.svg"/>',
         responsive: [
           {
             breakpoint: 1200,
@@ -103,5 +103,11 @@ $(document).ready(function(){
             },
           },
         ],
+      });
+
+      $(".carousel-btn").mouseover(function () {
+        $(this).attr('src', $(this).data("hover"));
+      }).mouseout(function () {
+        $(this).attr('src', $(this).data("src"));
       });
   });
