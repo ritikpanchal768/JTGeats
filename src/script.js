@@ -48,16 +48,60 @@ submit.addEventListener('click',()=>{
     modal_request.classList.remove('showed');
 });
 // carousel
+ let slide = 3 ;
+ console.log(slide);
+//  window.addEventListener('resize', (event) => {
+//     // slide = window.innerWidth <1262 ? 2 : 3;
+//     // console.log(slide,innerWidth);
+//     if(window.innerWidth <1262)
+//     $('.carousel-item ').slick('slickSetOption', 'slidesToShow', 2);
+//     else
+//     $('.carousel-item ').slick('slickSetOption', 'slidesToShow', 3);
+//  });
+// if($(window).width()<1262){
+//     slide=2
+// }
 $(document).ready(function(){
-    $('.carousel-item ').slick({
+    // $('.carousel-item ').slick({
+    //     accessibility:true,
+    //     adaptiveHeight:true,
+    //     centerMode:false,
+    //     cssEase:'ease',
+    //     // slidesToShow: slide,
+    //     slidesToShow: 3,
+    //     prevArrow:'<img class="slick-prev" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
+    //     nextArrow:'<img class="slick-next" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
+    //     // hov_prevArrow:'<img class="hav_slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" />',
+    //     // hov_prevArrow:'<img class="hav_slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" />'
+    // });
+    $('.carousel-item').slick({
         accessibility:true,
         adaptiveHeight:true,
+        infinite: true,
         centerMode:false,
         cssEase:'ease',
         slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         prevArrow:'<img class="slick-prev" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
         nextArrow:'<img class="slick-next" src="src/Assignment Assest/Assets/icons/Arrow.svg" />',
-        // hov_prevArrow:'<img class="hav_slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" />',
-        // hov_prevArrow:'<img class="hav_slick-prev" src="src/Assignment Assest/Assets/icons/play.svg" />'
-    });
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1008,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
   });

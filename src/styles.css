@@ -636,12 +636,16 @@ body{
 
 /* carousel */
 .popular-items-section{
-    width: 1400px;
+    max-width: 1400px;
     position: relative;
     top: 317px;
     left: 40px;
 }
 
+.popular-items-section .card{
+    max-width: 277px;
+    min-height: 250px;
+}
 
 /* .hov-arrow-prev:hover{
     opacity:1;
@@ -1012,7 +1016,7 @@ body{
     display: flex;
     /* justify-content: space-between; */
     width: 100%;
-    height: 603px;
+    min-height: 603px;
 
     background: #F7F8FA;
     
@@ -1392,6 +1396,10 @@ body{
         max-width: 702.396px;
         height: 353.6;
     } */
+    .contact-us-section{
+        flex-direction: column;
+        min-height: 1000pxpx;
+    }
 }
 
 @media ( max-width: 1050px) {
@@ -1420,4 +1428,17 @@ body{
     .search-food{
         left: 50px;
     }
+}
+
+@media (max-width: 1283px) {
+    /* .popular-items-section{
+        max-width: 900px;
+    }
+    .popular-items-section .card{
+        max-width: ;
+        min-height: ;
+    } */
+    /* .carousel-item{
+
+    }  */
 }
