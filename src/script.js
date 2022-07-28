@@ -5,10 +5,12 @@ var btn = document.getElementById('play-pause');
 function togglePlayPause(){
     if(video.paused){
         btn.className='pause';
+        btn.classList.add('hov');
         video.play();
     }
     else{
         btn.className='play';
+        
         video.pause();
     }
 }
