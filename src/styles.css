@@ -240,7 +240,7 @@ body{
 .main-landing-section{
     position: relative;
     left: 132px;
-    top: 159px;
+    top: 163px;
     max-width: 1163.63px;
     min-height: 560px;
     display: flex;
@@ -409,7 +409,32 @@ body{
     /* margin: 1em 0 0 0; */
     
 }
+.popular{
+    position: relative;
+    left: 500px;
+    top: 208px;
+    width: 427px;
+    height: 36px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 20px;
+    /* or 50% */
+
+    text-align: center;
+    letter-spacing: -0.012em;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
 /* cards */
 .column .card{
@@ -638,13 +663,14 @@ body{
 .popular-items-section{
     max-width: 1400px;
     position: relative;
-    top: 317px;
+    top: 200px;
     left: 40px;
 }
 
 .popular-items-section .card{
     max-width: 277px;
     min-height: 250px;
+    
 }
 
 /* .hov-arrow-prev:hover{
@@ -865,10 +891,8 @@ body{
 .service-section{
     width: 100%;
     height: 800px;
-    display: flex;
-    flex-direction: column;
 
-    
+    margin-top: -140px;
     /* background: red; */
 }
 .service{
@@ -877,23 +901,26 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 516px;
+    min-height: 400px;
     margin: 0;
     background: #FAFAFA;
-    z-index: -1;
 }
 .service-section .text{
+    position: relative;
+    top: 110px;
     margin: 0;
     max-width: 885px;
     min-height: 180px;
     text-align: center;
-    margin-top: 82px;
+    /* margin-top: 82px; */
     /* position: relative;
     left: 275px;
     top: 82px; */
     
 }
 .text .large{
+    /* position: relative;
+    top: ; */
     /* padding-left: 67px; */
     /* width: 100%; */
     text-align: center;
@@ -963,7 +990,10 @@ body{
     background: #C7EACC;
     /* background: red; */
     margin: 0;
-    z-index: -1;
+    position: relative;
+    top: -145px;
+  
+
 }
 .c-videos{
     margin-top: 33px;
@@ -971,9 +1001,8 @@ body{
     height: 442px;
     /* background: red; */
     position: relative;
-    /* left: 17.5em;
-    top: 8.2em; */
-    z-index: 1000;
+    left: 17.5em; 
+    z-index: 100;
     overflow: hidden;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
 }
@@ -1029,7 +1058,7 @@ body{
     /* justify-content: space-between; */
     width: 100%;
     min-height: 603px;
-
+    margin-top: -144px;
     background: #F7F8FA;
     
 }
