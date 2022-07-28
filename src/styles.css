@@ -411,7 +411,7 @@ body{
 }
 .popular{
     position: relative;
-    left: 500px;
+    left: 504px;
     top: 208px;
     width: 427px;
     height: 36px;
@@ -480,7 +480,7 @@ body{
 }
 .top p{
     position: absolute;
-    top: 15.5px;
+    top: 14.5px;
     left: 15.7px;
     display: inline;
     margin: 0;
@@ -512,8 +512,8 @@ body{
 /* bottom of card */
 .description .bottom{
     position: absolute;
-    top: 45px;
-    left: 15.5px;
+    top: 43.5px;
+    left: 16px;
     margin: 0;
     
 }
@@ -663,8 +663,8 @@ body{
 .popular-items-section{
     max-width: 1400px;
     position: relative;
-    top: 200px;
-    left: 40px;
+    top: 204px;
+    left: 43px;
 }
 
 .popular-items-section .card{
@@ -691,8 +691,8 @@ body{
     position: relative;
     width: 210px;
     height: 48px;
-    left: 574px;
-    top: 91px;
+    left: 570px;
+    top: 87px;
 
     background: #1AC073;
     border-radius: 10px;
@@ -916,7 +916,6 @@ body{
     /* position: relative;
     left: 275px;
     top: 82px; */
-    
 }
 .text .large{
     /* position: relative;
@@ -1033,25 +1032,10 @@ body{
     border: 0;
     outline: 0;
     cursor: pointer;
+    position: relative;
+    left: 5px;
+    top: 6px;
 }
-/* .buttons button:before{
-    content: "\f144";
-    font-family: 'Font Awesome 5 Free';
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    font-size: 28px;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-} */
-/* .buttons button.play:before{
-    content: "\f144";
-}
-.buttons button.play:before{
-    content: "\f28b";
-} */
-
-/* Contact-us-section */
 
 .contact-us-section{
     display: flex;
